@@ -2,8 +2,9 @@
 
 CMake cross platform module for building [Dear ImGui](https://github.com/ocornut/imgui) as a library.
 
-
 ## Getting Started
+
+> ***Warning***<br>The following section is not (entirely) valid anymore, please see `CMakeImplFiles.cmake` 
 
 ```bash
 git clone --recursive https://github.com/giladreich/ImGui-CMake-Installer
@@ -36,6 +37,8 @@ and the headers will also be copied under `dist/include` directory.
 
 ### Prerequisites
 
+> ***Note***<br>This works fine on Linux with GCC
+
 If you run into any errors, please make sure you running with the correct environments(i.e `Developer Command Prompt for VS 2017`).
 
 Another note that if you re-running cmake again with different options, make sure you remove `CMakeCache.txt` before you run cmake command again. Because the options would be cached in this file and won't refresh automatically.
@@ -54,6 +57,7 @@ I therefore got the motivation to make this CMake module so I can manage my own 
 ## Authors
 
 * **Gilad Reich** - *Initial work* - [giladreich](https://github.com/giladreich)
+* **Jacopo Maltagliati** - *Bumped up version to 1.88, provided scripts for own convenience, build backend SDL/OpenGL2*
 
 See also the list of [contributors](https://github.com/giladreich/ImGui-CMake-Installer/graphs/contributors) who participated in this project.
 

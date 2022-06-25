@@ -11,7 +11,7 @@ include(CMakeImplFiles.cmake)
 # Setup
 ##################################################################################################################
 project(imgui
-        VERSION 1.71
+        VERSION 1.88
         LANGUAGES CXX
         DESCRIPTION "ImGui library."
 )
@@ -43,9 +43,9 @@ set(FONTS_DIR ${SOURCE_DIR}/misc/fonts)
 ##################################################################################################################
 # Project Files
 ##################################################################################################################
-set(HEADERS_CXX_FILES 
-    ${SOURCE_DIR}/imgui.h
+set(HEADERS_CXX_FILES
     ${SOURCE_DIR}/imconfig.h
+    ${SOURCE_DIR}/imgui.h
     ${SOURCE_DIR}/imgui_internal.h
     ${SOURCE_DIR}/imstb_rectpack.h
     ${SOURCE_DIR}/imstb_textedit.h
@@ -53,10 +53,11 @@ set(HEADERS_CXX_FILES
 )
 
 set(SOURCES_CXX_FILES 
-    ${SOURCE_DIR}/imgui.cpp
-    ${SOURCE_DIR}/imgui_draw.cpp
-    ${SOURCE_DIR}/imgui_widgets.cpp
+    ${SOURCE_DIR}/imgui.cpp 
     ${SOURCE_DIR}/imgui_demo.cpp
+    ${SOURCE_DIR}/imgui_draw.cpp
+    ${SOURCE_DIR}/imgui_tables.cpp
+    ${SOURCE_DIR}/imgui_widgets.cpp
 )
 
 file(GLOB FONTS_FILES ${FONTS_DIR}/*.ttf)

@@ -17,19 +17,7 @@ option(IMGUI_WITH_IMPL       "Set to OFF to not include 'imgui_impl*' sources." 
 ##################################################################################################################
 # Options Dependent
 ##################################################################################################################
-cmake_dependent_option(IMGUI_IMPL_DX9
-    "Set to ON to include implementation files." OFF 
-    "IMGUI_WITH_IMPL" ON
-)
-cmake_dependent_option(IMGUI_IMPL_DX10
-    "Set to ON to include implementation files." OFF 
-    "IMGUI_WITH_IMPL" ON
-)
-cmake_dependent_option(IMGUI_IMPL_DX11
-    "Set to ON to include implementation files." OFF 
-    "IMGUI_WITH_IMPL" ON
-)
-cmake_dependent_option(IMGUI_IMPL_DX12
+cmake_dependent_option(IMGUI_IMPL_SDL_OPENGL2
     "Set to ON to include implementation files." OFF 
     "IMGUI_WITH_IMPL" ON
 )
